@@ -8,4 +8,7 @@ We used a custom dataset to fine-tune our model. The dataset can be found on our
 
 # Training
 
-After properly formatting our custom dataset to fit the LLaVa model, we made use of the [brev.dev](https://www.brev.dev/) platform to fine-tune our model. The platform provisioned us with a Jupyter [notebook](https://github.com/brevdev/notebooks/blob/main/llava-finetune.ipynb), as well as four NVIDIA A10 GPUs and forty-eight CPUs. We also made use of Python 3.0 and CUDA 12.2.2 for our environment. For the training process itself, we made use of Microsoft DeepSpeed and applied Lora - maintaining LLaVa's original pretrained backbone, yet adding new layers through our dataset. We trained our model for five epochs and generated a report of our run on [Weights and Biases](https://wandb.ai/site/).
+After properly formatting our custom dataset to fit the LLaVa model, we made use of the [brev.dev](https://www.brev.dev/) platform to fine-tune our model. The platform provisioned us with a Jupyter [notebook](https://github.com/brevdev/notebooks/blob/main/llava-finetune.ipynb), as well as four NVIDIA A10 GPUs and forty-eight CPUs. We also made use of Python 3.0 and CUDA 12.2.2 for our environment. For the training process itself, we made use of Microsoft DeepSpeed and applied Lora - maintaining LLaVa's original pretrained backbone, yet adding new layers through our dataset. We trained our model for five epochs and generated a report of our run on [Weights and Biases](https://wandb.ai/site/). Below we include images of the fine-tuning process and a sample of our run as recorded on Weights and Biases.
+
+
+
